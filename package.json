@@ -1,0 +1,20 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "watchify src/main.js -t babelify --outfile build/bundle.js"
+  },
+  "author": "Tristan O'Neil",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-react": "^6.1.2",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
